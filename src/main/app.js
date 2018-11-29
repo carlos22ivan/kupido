@@ -3,19 +3,19 @@ const mongoose = require('mongoose')
 const morgan = require('morgan')
 const config = require('config')
 const createError = require('http-errors')
+const path = require('path')
 const router = require('./router')
 const app = express()
 
 /**
  * mongodb database
  */
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
-mongoose.connect(config.get('mongodb.url'))
-        .then(() => console.log('Mongoose connection open to ' + config.get('mongodb.url')))
-        .catch(err => console.log('Mongoose connection error: ' + err))
-
+// mongoose.set('useNewUrlParser', true);
+// mongoose.set('useFindAndModify', false);
+// mongoose.set('useCreateIndex', true);
+// mongoose.connect(config.get('mongodb.url'))
+//         .then(() => console.log('Mongoose connection open to ' + config.get('mongodb.url')))
+//         .catch(err => console.log('Mongoose connection error: ' + err))
 
 /**
  * middleware
