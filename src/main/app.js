@@ -40,7 +40,7 @@ app.use(router)
  */
 app.use((req, res, next) => {
         let params = {error: createError(404)}
-        res.render('error', params)
+        res.render('index', params)
 });
 
 /**
