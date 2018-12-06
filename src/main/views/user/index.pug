@@ -1,0 +1,103 @@
+extends ../layout
+
+block content
+
+    div.bg-black
+        div.parallax-empieza
+            div.parallax-caption
+                h1.display-2.text-white(style="font-family: 'Sedgwick Ave', cursive;") Busca, selecciona y Reserva tu motel
+                    span.text-accent &nbsp; ya!
+            div.parallax-button
+                a.btn.btn-raised.btn-accent(href='reservar') Reserva ya!
+
+    div.container(style="margin-top: -30px; z-index:100;")
+        div.card
+            div.card-body
+                .d-flex.justify-content-center.my-3
+                    .p-2
+                        h1.display-2(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") si no sabes cual elegir, te ayudamos :)
+                .d-flex.text-justify
+                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary
+                            .mt-4.text-center.color-amber-500
+                                i.fa.fa-star-o.fa-4x.text-center(aria-hidden='true')
+                            .card-body
+                                h5.card-title
+                                    | favoritos
+                                p.card-text
+                                    | Ubica los moteles mas preferidos de tu ciudad.
+                            .card-body
+                                a.card-link(href='reservar')
+                                    | filtra favoritos
+                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary
+                            .mt-4.text-center.color-red-500
+                                i.fa.fa-map-marker.fa-4x.text-center(aria-hidden='true')
+                            .card-body
+                                h5.card-title
+                                    | cercanos
+                                p.card-text
+                                    | Localiza los moteles mas cercanos a tu posición.
+                            .card-body
+                                a.card-link(href='reservar')
+                                    | filtra cercanos
+                    .p-2.mx-5(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary
+                            .mt-4.text-center.color-blue-500
+                                i.fa.fa-check-square-o.fa-4x.text-center(aria-hidden='true')
+                            .card-body
+                                h5.card-title
+                                    | servicios
+                                p.card-text
+                                    | Localiza tu motel seleccionando los servicios que deseas adquirir.
+                            .card-body
+                                a.card-link(href='reservar')
+                                    | filtra servicio
+
+            div.parallax-empieza.rounded.d-flex.align-items-center.justify-content-center.text-center.flex-column
+                .display-2.text-white.mx-5(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 2 2 3px #9c27b0")
+                    | Libera tus
+                    span.text-accent &nbsp; instintos.
+
+            div.card-body
+                //.d-flex.justify-content-center.my-3
+                //    .p-2
+                //        h1.display-2(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") si no sabes cual elegir, te ayudamos :)
+
+                .d-flex.text-justify
+                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary
+                            .mt-4.text-center.color-amber-500
+                                i.fa.fa-dollar.fa-4x.text-center(aria-hidden='true')
+                            .card-body
+                                h5.card-title
+                                    | precio
+                                p.card-text
+                                    | Selecciona tu motel definiendo tu presupuesto.
+                            .card-body
+                                a.card-link(href='#')
+                                    | filtra favoritos
+                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary
+                            .mt-4.text-center.color-red-500
+                                i.fa.fa-product-hunt.fa-4x.text-center(aria-hidden='true')
+                            .card-body
+                                h5.card-title
+                                    | promociones
+                                p.card-text
+                                    | Descubre ofertas y descuentos para tus momentos de pasión.
+                            .card-body
+                                a.card-link(href='#')
+                                    | filtra cercanos
+                    .p-2.mx-5(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary
+                            .mt-4.text-center.color-blue-500
+                                i.fa.fa-link.fa-4x.text-center(aria-hidden='true')
+                            .card-body
+                                h5.card-title
+                                    | alianza
+                                p.card-text
+                                    | gremio de los taxistas, uber, macdonald's, cadenas de cine.
+                            .card-body
+                                a.card-link(href='#')
+                                    | filtra servicio

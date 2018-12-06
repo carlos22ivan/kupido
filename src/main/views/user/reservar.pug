@@ -1,0 +1,224 @@
+extends ../layout
+
+block content
+    div.container(style="margin-top: 30px; z-index:100;")
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/') Home
+                li.breadcrumb-item.active(aria-current='page') Reservar
+        div.card(style='min-height:700px')
+            div.card-body
+                .mx-5
+                    h1.display-2.my-3(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;")
+                        | y entonces... como lo buscas.
+                    .row
+                        .col-md-8
+                            #list
+                                #collapseUbicacion.collapse(data-parent="#list")
+                                    .card.card-body
+                                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9607952908154!2d-72.48967808522117!3d7.899164894309412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab4b03ed6c85830e!2sUniversidad+Francisco+de+Paula+Santander!5e0!3m2!1ses-419!2sco!4v1543892428192" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=true)
+                                        //img(src='https://images1.livehindustan.com/uploadimage/library/2018/10/07/16_9/16_9_1/google_map_Symbolic_Image__1538892270.jpg',style='height:auto;width:100%')
+
+                                #collapseList2.collapse(data-parent="#list")
+                                    .card.card-body
+                                        .row
+                                            .col-md-4
+                                                img(src='https://media-cdn.tripadvisor.com/media/photo-s/10/ab/7a/ee/fachada-exterior-marginal.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Las palmas
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | cll 12 # 44-21 - salida a el zulia
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                                #collapseList.collapse(data-parent="#list")
+                                    .card.card-body
+                                        .row
+                                            .col-md-4
+                                                img(src='https://losmoteles.com/wp-content/uploads/2016/04/fachada-motel-deseos.1.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Deseos
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | cll 12 # 44-21 - salida a el zulia
+                                                p.text-muted
+                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
+                                                    | paga 2 horas y disfruta 3 en habitaciones de tematica rusa.
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                                        hr
+                                        .row
+                                            .col-md-4
+                                                img(src='https://media-cdn.tripadvisor.com/media/photo-s/10/ab/7a/ee/fachada-exterior-marginal.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Las palmas
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | cll 12 # 44-21 - salida a el zulia
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                                        hr
+                                        .row
+                                            .col-md-4
+                                                img(src='https://k45.kn3.net/taringa/7/9/8/6/9/3//manolito1276/A44.jpg?3847',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") La iguana
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | cll 12 # 44-21 - salida a el zulia
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                                        hr
+                                #collapseListPromo.collapse(data-parent="#list")
+                                    .card.card-body
+                                        .row
+                                            .col-md-4
+                                                img(src='https://losmoteles.com/wp-content/uploads/2016/04/fachada-motel-deseos.1.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Deseos
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | cll 12 # 44-21 - salida a el zulia
+                                                p.text-muted
+                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
+                                                    | paga 2 horas y disfruta 3 en habitaciones de tematica rusa.
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                        .col-md-4
+                            #accordion
+                                .card
+                                    .mx-3.my-1
+                                        h5.mb-0
+                                            button.btn.btn-link(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
+                                                | Favoritos
+                                .card
+                                    .mx-3.my-1
+                                        h5.mb-0
+                                            button.btn.btn-link(data-toggle='collapse', data-target='#collapseListPromo', aria-expanded='true', aria-controls='collapseListPromo')
+                                                | Promociones
+                                .card
+                                    .mx-3.my-1
+                                        h5.mb-0
+                                            button.btn.btn-link(data-toggle='collapse', data-target='#collapseUbicacion', aria-expanded='true', aria-controls='collapseUbicacion')
+                                                | Ubicacion
+                                .card
+                                    .mx-3.my-1
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapsePrecioOptions', aria-expanded='false', aria-controls='collapsePrecioOptions')
+                                                | Precio
+                                    #collapsePrecioOptions.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+                                        .card-body
+                                            .row
+                                                .col-md
+                                                    input.form-control(type='number',style="width:100px", placeholder='min')
+                                                .col-md
+                                                    input.form-control(type='number',style="width:100px", placeholder='max')
+                                            .d-flex.justify-content-end.mt-2
+                                                button.btn.btn-primary.ml-auto(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
+                                                    | filtrar
+                                .card
+                                    .mx-3.my-1
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseServiciosOptions', aria-expanded='false', aria-controls='collapseServiciosOptions')
+                                                | Servicios
+                                    #collapseServiciosOptions.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+
+                                        ul.mb-0
+                                            .switch.mb-1
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-glass(aria-hidden='true') &nbsp;
+                                                        | Bar
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-cutlery(aria-hidden='true') &nbsp;
+                                                        | Restaurante
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-bath(aria-hidden='true') &nbsp;
+                                                        | Sauna
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        | Decoración
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-male(aria-hidden='true') &nbsp;
+                                                        | Tienda de juguetes
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        | Sillas temáticas
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        | Tubo pool dance
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-shower(aria-hidden='true') &nbsp;
+                                                        | Baño turco
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        | Habitaciones Tematicos
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-credit-card(aria-hidden='true') &nbsp;
+                                                        | TC/TD
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        | Jacuzzi
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        | Piscina
+                                            .switch
+                                                label
+                                                    input(type="checkbox").ml-auto
+                                                    span
+                                                        i.fa.fa-intersex(aria-hidden='true') &nbsp;
+                                                        | Incluyente
+                                        .d-flex.justify-content-end
+                                            button.btn.btn-primary.ml-auto.mr-3.mt-0(data-toggle='collapse', data-target='#collapseList2', aria-expanded='true', aria-controls='collapseList2')
+                                                | filtrar
+
+

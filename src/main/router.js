@@ -1,12 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const homeController = require('./controllers/home.controller')
 
-// example
-// router.route('/')
-//         .get()
-//         .post()
-//         .put()
-//         .patch()
-//         .delete()
+router.route('/').get(homeController.homePage)
+router.route('/reservar').get(homeController.reservarPage)
 
 module.exports = router

@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 module.exports = {
         mode: 'production',
@@ -21,12 +22,16 @@ module.exports = {
                                         'css-loader',
                                         'sass-loader'
                                 ]
-                        }
+                        },
                 ]
         },
         plugins: [
                 new MiniCssExtractPlugin({
                         filename: "bundle.css",
                 }),
+                // new webpack.ProvidePlugin({
+                //         $: "jquery",
+                //         jQuery: "jquery"
+                // })
         ],
 }
