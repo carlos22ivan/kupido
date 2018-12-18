@@ -1,0 +1,495 @@
+extends ../layout
+
+block content
+    div.container(style="margin-top: 30px; z-index:100;")
+        nav(aria-label='breadcrumb')
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/') Home
+                li.breadcrumb-item
+                    a(href="/reservar") Reservar
+                li.breadcrumb-item.active(aria-current='page') El Castillo
+        div.card(style='min-height:700px')
+            div.card-body
+                .mx-5
+                    .row
+                        .col-md-4
+                            .card.sticky-top(style="position: sticky;top: 10%;z-index: 0;")
+                                .card-body
+                                    img(src='img/elcastillo/fachada.jpg',style='height:auto;width:100%')
+                                    hr
+                                    h4(style="font-family: 'Sedgwick Ave', cursive;") El Castillo
+                                    dl.row.mx-0
+                                        dt
+                                            i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                            | Direccion: &nbsp;
+                                        dd.text-muted Vía Antigua a San Antonio, Villa Del Rosario, Norte de Santander.
+                                        dt Teléfono: &nbsp;
+                                        dd.text-muted (7) 5701771
+                                    p.color-amber-500
+                                        i.fa.fa-star.fa-2x(aria-hidden='true')
+                                        i.fa.fa-star.fa-2x(aria-hidden='true')
+                                        i.fa.fa-star.fa-2x(aria-hidden='true')
+                                        i.fa.fa-star.fa-2x(aria-hidden='true')
+                                        i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                        .col-md-8
+                            .card.card-body
+                                .row
+                                    .col-md-6
+                                        #carouselControls5.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/china1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/china2.jpg', alt='Second slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls5', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls5', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $80.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") china
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | jacuzzi
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 cervezas o 500 ml aguardiente
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                .row
+                                    .col-md-6
+                                        #carouselControls6.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/mansion1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/mansion2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/mansion3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/mansion4.jpg', alt='Third slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls6', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls6', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $70.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") la mansion & spa terraza
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | jacuzzi
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 3 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                .row
+                                    .col-md-6
+                                        #carouselControls7.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/play1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/play2.jpg', alt='Second slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls7', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls7', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $60.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") play boy
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne o pirinola quita ropa
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                .row
+                                    .col-md-6
+                                        #carouselControls8.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/primaveral1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/primaveral2.jpg', alt='Second slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls8', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls8', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $60.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") primaveral
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne o pirinola quita ropa
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                .row
+                                    .col-md-6
+                                        #carouselControls9.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/egipcia1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/egipcia2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/egipcia3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/egipcia4.jpg', alt='Third slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls9', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls9', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $60.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") egipcia
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne o pirinola quita ropa
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                .row
+                                    .col-md-6
+                                        #carouselControls4.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/tropical1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/tropical2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/tropical3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/tropical4.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/tropical5.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/tropical6.jpg', alt='Third slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls4', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls4', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $49.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") tropical
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne o pirinola quita ropa
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 3 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                .row
+                                    .col-md-6
+                                        #carouselControls2.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/vegas1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/vegas2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/vegas3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/vegas3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/vegas3.jpg', alt='Third slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls2', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls2', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $49.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") rumba las vegas y hollyday
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 2 suites
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L aguardiente
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 6 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                //45.000
+                                .row
+                                    .col-md-6
+                                        #carouselControls.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/olimpo1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/olimpo2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/olimpo3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/olimpo4.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/olimpo5.jpg', alt='Third slide',style='height:200px;width:100%')
+
+                                            a.carousel-control-prev(href='#carouselControls', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $45.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") Suite Olimpo
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | jacuzzi
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne o pirinola quita ropa
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr
+                                //40.000
+                                .row
+                                    .col-md-6
+                                        #carouselControls3.carousel.slide(data-ride='carousel')
+                                            .carousel-inner
+                                                .carousel-item.active
+                                                    img.d-block.w-100(src='img/elcastillo/prisioneros1.jpg', alt='First slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/prisioneros2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/prisioneros3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                                .carousel-item
+                                                    img.d-block.w-100(src='img/elcastillo/prisioneros4.jpg', alt='Third slide',style='height:200px;width:100%')
+                                            a.carousel-control-prev(href='#carouselControls3', role='button', data-slide='prev')
+                                                span.carousel-control-prev-icon(aria-hidden='true')
+                                                span.sr-only Previous
+                                            a.carousel-control-next(href='#carouselControls3', role='button', data-slide='next')
+                                                span.carousel-control-next-icon(aria-hidden='true')
+                                                span.sr-only Next
+                                        br
+                                        p.color-amber-500
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star(aria-hidden='true')
+                                            i.fa.fa-star-half-full(aria-hidden='true')
+                                            span.text-body.float-right.h4 &nbsp; $40.000
+                                    .col-md-6
+                                        h4.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") prisioneros de la pasión
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | silla erotica
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | minibar
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | juguetes
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 1L champagne o pirinola quita ropa
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 3 personas
+                                        div
+                                            i.fa.fa-check &nbsp;
+                                            | 4 horas
+                                        hr
+                                        button.btn.btn-primary.float-right reserva ya!
+                                hr

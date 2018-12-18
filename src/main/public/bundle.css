@@ -13506,7 +13506,7 @@ h6 {
   /* The image used */
   opacity: 0.95;
   text-shadow: 5px 5px 10px #000;
-  background-image: url("https://szftlgs.com/wp-content/uploads/data/2018/1/10/wallpaper-PIC-WSW3097753.jpg");
+  background-image: url(/img/parallax.jpg);
   height: 400px;
   background-attachment: fixed;
   background-repeat: no-repeat;
