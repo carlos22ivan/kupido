@@ -9,20 +9,20 @@ function getVisitas() {
 }
 
 exports.reservarPage = (req, res) => {
-        res.render('user/reservar', {visitas: getVisitas()})
+        res.render('user/reservar', {visitas: visitas})
 }
 
 exports.motel1 = (req, res) => {
-        res.render('user/motel1', {visitas: getVisitas()})
+        res.render('user/motel1', {visitas: visitas})
 }
 
 exports.motel2 = (req, res) => {
-        res.render('user/motel2', {visitas: getVisitas()})
+        res.render('user/motel2', {visitas: visitas})
 }
 
 exports.motel3 = (req, res) => {
-        res.render('user/motel3', {visitas: getVisitas()})
+        res.render('user/motel3', {visitas: visitas})
 }
 exports.motel4 = (req, res) => {
-        res.render('user/motel4', {visitas: getVisitas()})
+        res.render('user/motel4', {visitas: visitas})
 }
