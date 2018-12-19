@@ -7,155 +7,52 @@ block content
                 li.breadcrumb-item
                     a(href='/') Home
                 li.breadcrumb-item.active(aria-current='page') Reservar
-        div.card(style='min-height:700px')
-            div.card-body
-                .mx-5
-                    h1.display-2.my-3(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;")
-                        | y entonces... como lo buscas.
+        div(style='min-height:700px')
+            div
+                div
+                    .card.mb-3.parallax-empieza(style="height: 100%; background-color:#000")
+                        .card-body.text-center.text-white
+                            h1.display-5.my-3(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;")
+                                | y entonces... como lo buscas.
                     .row
-                        .col-md-8
-                            #list
-                                #collapseUbicacion.collapse(data-parent="#list")
-                                    .card.card-body
-                                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.817964176546!2d-72.46156758752005!3d7.820702852852887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6646ed0d266947%3A0x57d6dfc42cb149ee!2sMotel+El+Castillo!5e0!3m2!1ses-419!2sco!4v1545020635057" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=true)
 
-                                #collapseList2.collapse.show(data-parent="#list")
-                                    .card.card-body
-                                        .row
-                                            .col-md-4
-                                                img(src='img/elcastillo/fachada.jpg',style='height:auto;width:100%')
-                                            .col-md-8
-                                                h4(style="font-family: 'Sedgwick Ave', cursive;") El Castillo
-                                                p.text-muted
-                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
-                                                    | Vía Antigua a San Antonio, Villa Del Rosario, Norte de Santander.
-                                                p.color-amber-500
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                a.btn.btn-primary.float-right(href="/el-castillo") Ver
-                                        hr
-                                        .row
-                                            .col-md-4
-                                                img(src='img/eclipse/fachada.png',style='height:auto;width:100%')
-                                            .col-md-8
-                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Eclipse
-                                                p.text-muted
-                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
-                                                    | Cra. 23 No 58-77 Autopista Sur oriental
-                                                p.text-muted
-                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
-                                                    | Visita el motel en tu cumpleaños y reclama un descuento del 50% presentando tu cedúla.
-                                                p.text-muted
-                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
-                                                    | 50% de descuento en tu 5 visita.
-                                                p.color-amber-500
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
-                                                a.btn.btn-primary.float-right(href="/eclipse") Ver
-                                        hr
-                                #collapseList.collapse(data-parent="#list")
-                                    .card.card-body
-                                        .row
-                                            .col-md-4
-                                                img(src='img/elcastillo/fachada.jpg',style='height:auto;width:100%')
-                                            .col-md-8
-                                                h4(style="font-family: 'Sedgwick Ave', cursive;") El Castillo
-                                                p.text-muted
-                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
-                                                    | Vía Antigua a San Antonio, Villa Del Rosario, Norte de Santander.
-                                                p.color-amber-500
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                a.btn.btn-primary.float-right(href="/el-castillo") Ver
-                                        hr
-                                        .row
-                                            .col-md-4
-                                                img(src='img/eclipse/fachada.png',style='height:auto;width:100%')
-                                            .col-md-8
-                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Eclipse
-                                                p.text-muted
-                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
-                                                    | Cra. 23 No 58-77 Autopista Sur oriental
-                                                p.text-muted
-                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
-                                                    | Visita el motel en tu cumpleaños y reclama un descuento del 50% presentando tu cedúla.
-                                                p.text-muted
-                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
-                                                    | 50% de descuento en tu 5 visita.
-                                                p.color-amber-500
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
-                                                a.btn.btn-primary.float-right(href="/eclipse") Ver
-                                        hr
-                                #collapseListPromo.collapse(data-parent="#list")
-                                    .card.card-body
-                                        .row
-                                            .col-md-4
-                                                img(src='img/eclipse/fachada.png',style='height:auto;width:100%')
-                                            .col-md-8
-                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Eclipse
-                                                p.text-muted
-                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
-                                                    | Cra. 23 No 58-77 Autopista Sur oriental
-                                                p.text-muted
-                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
-                                                    | Visita el motel en tu cumpleaños y reclama un descuento del 50% presentando tu cedúla.
-                                                p.text-muted
-                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
-                                                    | 50% de descuento en tu 5 visita.
-                                                p.color-amber-500
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
-                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
-                                                a.btn.btn-primary.float-right(href="/eclipse") Ver
-                                        hr
-                        .col-md-4
+                        .col-md-4.mb-3
                             #accordion
                                 .card
-                                    .mx-3.my-1
-                                        h5.mb-0
-                                            button.btn.btn-link(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
-                                                | Favoritos
-                                .card
-                                    .mx-3.my-1
-                                        h5.mb-0
-                                            button.btn.btn-link(data-toggle='collapse', data-target='#collapseListPromo', aria-expanded='true', aria-controls='collapseListPromo')
-                                                | Promociones
-                                .card
-                                    .mx-3.my-1
-                                        h5.mb-0
-                                            button.btn.btn-link(data-toggle='collapse', data-target='#collapseUbicacion', aria-expanded='true', aria-controls='collapseUbicacion')
-                                                | Ubicacion
-                                .card
-                                    .mx-3.my-1
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapsePrecioOptions', aria-expanded='false', aria-controls='collapsePrecioOptions')
-                                                | Precio
-                                    #collapsePrecioOptions.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
-                                        .card-body
-                                            .row
-                                                .col-md
-                                                    input.form-control(type='number',style="width:100px", placeholder='min')
-                                                .col-md
-                                                    input.form-control(type='number',style="width:100px", placeholder='max')
-                                            .d-flex.justify-content-end.mt-2
-                                                button.btn.btn-primary.ml-auto(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
-                                                    | filtrar
-                                .card
+                                    .card-body
+                                        h5.my-3(style="font-family: 'Sedgwick Ave', cursive;")
+                                            |Filtrar Moteles
+                                        .card
+                                            .mx-3.my-1
+                                                h5.mb-0
+                                                    button.btn.btn-link(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
+                                                        | Favoritos
+                                        .card
+                                            .mx-3.my-1
+                                                h5.mb-0
+                                                    button.btn.btn-link(data-toggle='collapse', data-target='#collapseListPromo', aria-expanded='true', aria-controls='collapseListPromo')
+                                                        | Promociones
+                                        .card
+                                            .mx-3.my-1
+                                                h5.mb-0
+                                                    button.btn.btn-link(data-toggle='collapse', data-target='#collapseUbicacion', aria-expanded='true', aria-controls='collapseUbicacion')
+                                                        | Ubicacion
+                                        .card
+                                            .mx-3.my-1
+                                                h5.mb-0
+                                                    button#btnPrecio.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapsePrecioOptions', aria-expanded='false', aria-controls='collapsePrecioOptions')
+                                                        | Precio
+                                            #collapsePrecioOptions.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+                                                .card-body
+                                                    .row
+                                                        .col-md
+                                                            input.form-control(type='number',style="width:100px", placeholder='min')
+                                                        .col-md
+                                                            input.form-control(type='number',style="width:100px", placeholder='max')
+                                                    .d-flex.justify-content-end.mt-2
+                                                        button.btn.btn-primary.ml-auto(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
+                                                            | filtrar
+                                //.card
                                     .mx-3.my-1
                                         h5.mb-0
                                             button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseServiciosOptions', aria-expanded='false', aria-controls='collapseServiciosOptions')
@@ -236,7 +133,138 @@ block content
                                                         i.fa.fa-intersex(aria-hidden='true') &nbsp;
                                                         | Incluyente
                                         .d-flex.justify-content-end
-                                            button.btn.btn-primary.ml-auto.mr-3.mt-0(data-toggle='collapse', data-target='#collapseList2', aria-expanded='true', aria-controls='collapseList2')
-                                                | filtrar
+                                            button.btn.btn-primary.ml-auto.mr-3.mt-0(data-toggle='collapse', data-target='#collapseList', aria-expanded='true', aria-controls='collapseList')
+                                            | filtrar
+
+                        .col-md-8
+                            #list
+                                #collapseUbicacion.collapse(data-parent="#list")
+                                    .card.card-body
+                                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.817964176546!2d-72.46156758752005!3d7.820702852852887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6646ed0d266947%3A0x57d6dfc42cb149ee!2sMotel+El+Castillo!5e0!3m2!1ses-419!2sco!4v1545020635057" height="450" frameborder="0" style="border:0" allowfullscreen=true)
+
+                                #collapseList.collapse(data-parent="#list")
+                                    .card.card-body
+                                        .row
+                                            .col-md-4.mb-2
+                                                img(src='img/elcastillo/fachada.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") El Castillo
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | Vía Antigua a San Antonio, Villa Del Rosario, Norte de Santander.
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                a.btn.btn-primary.float-right(href="el-castillo") Ver
+                                    .card.card-body.mt-3
+                                        .row
+                                            .col-md-4.mb-2
+                                                img(src='img/qatar/fachada.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Qatar
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    |Vía Antigua La Parada, Mz. Z Lote 23
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                a.btn.btn-primary.float-right(href="qatar") Ver
+                                    .card.card-body.mt-3
+                                        .row
+                                            .col-md-4.mb-2
+                                                img(src='img/lacascada/fachada.jpg',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") La Kaskada
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    |Autopista A San Antonio Km 6, Cúcuta, Norte de Santander, Colombia
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                a.btn.btn-primary.float-right(href="la-kaskada") Ver
+                                    .card.card-body.mt-3
+                                        .row
+                                            .col-md-4.mb-2
+                                                img(src='img/eclipse/fachada.png',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Eclipse
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | Cra. 23 No 58-77 Autopista Sur oriental
+                                                p.text-muted
+                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
+                                                    b
+                                                        i Visita el motel en tu cumpleaños y reclama un descuento del 50% presentando tu cedúla.
+                                                p.text-muted
+                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
+                                                    b
+                                                        i 50% de descuento en tu 5 visita.
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                                                a.btn.btn-primary.float-right(href="/eclipse") Ver
+                                #collapseListPromo.collapse(data-parent="#list")
+                                    .card.card-body
+                                        .row
+                                            .col-md-4.mb-2
+                                                img(src='img/eclipse/fachada.png',style='height:auto;width:100%')
+                                            .col-md-8
+                                                h4(style="font-family: 'Sedgwick Ave', cursive;") Eclipse
+                                                p.text-muted
+                                                    i.fa.fa-map-marker(aria-hidden='true') &nbsp;
+                                                    | Cra. 23 No 58-77 Autopista Sur oriental
+                                                p.text-muted
+                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
+                                                    b
+                                                        i Visita el motel en tu cumpleaños y reclama un descuento del 50% presentando tu cedúla.
+                                                p.text-muted
+                                                    i.fa.fa-product-hunt.color-amber-500(aria-hidden='true') &nbsp;
+                                                    b
+                                                        i 50% de descuento en tu 5 visita.
+                                                p.color-amber-500
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star.fa-2x(aria-hidden='true')
+                                                    i.fa.fa-star-half-full.fa-2x(aria-hidden='true')
+                                                a.btn.btn-primary.float-right(href="/eclipse") Ver
 
 
+block js
+
+    <script>
+    |console.log(new URLSearchParams(window.location.search));
+    |switch (window.location.search.substring(1)){
+    |case "favoritos":{
+    |    $('#collapseList').collapse('show');
+    |    break;
+    |}
+    |case "":{
+    |    $('#collapseList').collapse('show');
+    |     break;
+    | }
+    |case "ubicacion":{
+    |$('#collapseUbicacion').collapse('show');
+    |    break;
+    |}
+    |case "promociones":{
+    |$('#collapseListPromo').collapse('show');
+    |break;
+    |}
+    |case "precio":{
+    |$('#btnPrecio').trigger("click");
+    |break;
+    |}
+    |}</script>

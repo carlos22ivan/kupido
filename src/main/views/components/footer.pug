@@ -1,32 +1,32 @@
 div.pb-3.pt-5.text-white.bg-primary(style="margin-top: -30px; z-index:50;")
     div.container
-        div.d-flex.justify-content-between.align-items-center
-            div.p-2.h2.ml-md-5
-                span ¿quieres recibir ofertas unicas?
-            div.p-2.mx-auto
-                div.d-flex.flex-column
-                    div.p-2.bg-light.rounded(style='box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);')
-                        form.form-inline
-                            .form-group
-                                label.bmd-label-floating(for='email') Correo Eĺectronico
-                                input#email.form-control(type='email')
-                            span.form-group.bmd-form-group
-                                button.btn.btn-primary(type='submit') unete
-                        //form.form-inline.my-2.my-lg-0
-                            input.form-control.mr-sm-2(placeholder='correo electronico', style='width:300px')
-                            button.btn.btn-outline-light.my-2.my-sm-0(type='submit') unete
-                    div.d-flex
-                        div.p-2
-                            a(href='#').text-white
-                                img.app-download(alt='logo app store', src='https://clashroyale.com/uploaded-images-blog/0009_App_Store_Spanish.png?mtime=20180423193338')
-                        div.p-2
-                            a(href='#').text-white
-                                img.app-download(alt='logo play store', src='https://clashroyale.com/uploaded-images-blog/0023_GooglePlay_Spanish.png?mtime=20180423193337')
+        div.row
+            div.col-md-6.p-2.h2
+                p.text-center ¿quieres recibir ofertas unicas?
+            div.col-md-4.p-2
+                div.p-2.rounded(style='box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);').bg-light
+                    form.form-inline
+                        .form-group
+                            label.bmd-label-floating(for='email') Correo Eĺectronico
+                            input#email.form-control(type='email')
+                        span.form-group.bmd-form-group
+                            button.btn.btn-primary(type='submit') unete
+                    //form.form-inline.my-2.my-lg-0
+                        input.form-control.mr-sm-2(placeholder='correo electronico', style='width:300px')
+                        button.btn.btn-outline-light.my-2.my-sm-0(type='submit') unete
+                div.d-flex
+                    div.p-2
+                        a(href='#').text-white
+                            img.app-download(alt='logo app store', src='https://clashroyale.com/uploaded-images-blog/0009_App_Store_Spanish.png?mtime=20180423193338')
+                    div.p-2
+                        a(href='#').text-white
+                            img.app-download(alt='logo play store', src='https://clashroyale.com/uploaded-images-blog/0023_GooglePlay_Spanish.png?mtime=20180423193337')
+
         hr.bg-light
         div.d-flex.justify-content-between
             div.d-flex.flex-column
                 div.p-2.ml-md-5
-                    h4 siguenos en nuestras redes sociales
+                    h4.text-center siguenos en nuestras redes sociales
                 div.d-flex.justify-content-center.flex-row
                     div.p-2.ml-md-5
                         a(href='#').text-white
@@ -38,6 +38,8 @@ div.pb-3.pt-5.text-white.bg-primary(style="margin-top: -30px; z-index:50;")
                         a(href='#').text-white
                             i.fa.fa-twitter-square.fa-2x(aria-hidden='true')
             div.d-flex.flex-column.mx-auto
+                p.text-white.py-1 visitas: &nbsp;
+                    span=visitas
                 a(href='#').text-white.py-1 ayuda
                 a(href='#').text-white.py-1 como funciona
                 a(href='#').text-white.py-1 terminos y condiciones

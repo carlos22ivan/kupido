@@ -5,7 +5,7 @@ block content
     div.bg-black
         div.parallax-empieza
             div.parallax-caption
-                h1.display-2.text-white(style="font-family: 'Sedgwick Ave', cursive;") Busca, selecciona y Reserva tu motel
+                h1.display-5.text-white(style="font-family: 'Sedgwick Ave', cursive;") Busca, selecciona y Reserva tu motel
                     span.text-accent &nbsp; ya!
             div.parallax-button
                 a.btn.btn-raised.btn-accent(href='reservar') Reserva ya!
@@ -15,10 +15,11 @@ block content
             div.card-body
                 .d-flex.justify-content-center.my-3
                     .p-2
-                        h1.display-2(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") si no sabes cual elegir, te ayudamos :)
-                .d-flex.text-justify
-                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
-                        .card.border.border-primary
+                        //h1.display-5(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") si no sabes cual elegir, te ayudamos :)
+                        h1.text-center(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") si no sabes cual elegir, te ayudamos :)
+                .row.text-justify
+                    .col-md-4.p-2
+                        .card.border.border-primary.ml-md-3
                             .mt-4.text-center.color-amber-500
                                 i.fa.fa-star-o.fa-4x.text-center(aria-hidden='true')
                             .card-body
@@ -26,47 +27,44 @@ block content
                                     | favoritos
                                 p.card-text
                                     | Ubica los moteles mas preferidos de tu ciudad.
-                            .card-body
-                                a.card-link(href='reservar')
+                                a.card-link(href='reservar?favoritos')
                                     | filtra favoritos
-                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
-                        .card.border.border-primary
-                            .mt-4.text-center.color-red-500
+                    .col-md-4.p-2
+                        .card.border.border-primary.ml-md-3
+                            .mt-4.text-center.color-blue-500
                                 i.fa.fa-map-marker.fa-4x.text-center(aria-hidden='true')
                             .card-body
                                 h5.card-title
                                     | cercanos
                                 p.card-text
                                     | Localiza los moteles mas cercanos a tu posición.
-                            .card-body
-                                a.card-link(href='reservar')
+                                a.card-link(href='reservar?ubicacion')
                                     | filtra cercanos
-                    .p-2.mx-5(style=' flex-grow: 1; flex-basis: 0;')
-                        .card.border.border-primary
-                            .mt-4.text-center.color-blue-500
-                                i.fa.fa-check-square-o.fa-4x.text-center(aria-hidden='true')
+                    .col-md-4.p-2
+                        .card.border.border-primary.mx-md-3
+                            .mt-4.text-center.color-red-500
+                                i.fa.fa-product-hunt.fa-4x.text-center(aria-hidden='true')
                             .card-body
                                 h5.card-title
-                                    | servicios
+                                    | promociones
                                 p.card-text
-                                    | Localiza tu motel seleccionando los servicios que deseas adquirir.
-                            .card-body
-                                a.card-link(href='reservar')
-                                    | filtra servicio
+                                    | Descubre ofertas y descuentos para tus momentos de pasión.
+                                a.card-link(href='reservar?promociones')
+                                    | filtra promociones
 
                 .d-flex.justify-content-center.my-3
                     .p-2
-                        h3.display-2(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") Favoritos :)
+                        h1.text-center(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") Habitaciones Favoritas ;)
 
-                .d-flex.text-justify
-                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
+                .row.text-justify
+                    .col-md-4.p-2(style=' flex-grow: 1; flex-basis: 0;')
                         .card.border.border-primary.p-3
                             #carouselControls7.carousel.slide(data-ride='carousel')
                                 .carousel-inner
                                     .carousel-item.active
-                                        img.d-block.w-100(src='img/elcastillo/play1.jpg', alt='First slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/elcastillo/china1.jpg', alt='First slide',style='height:200px;width:100%')
                                     .carousel-item
-                                        img.d-block.w-100(src='img/elcastillo/play2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/elcastillo/china2.jpg', alt='Second slide',style='height:200px;width:100%')
 
                                 a.carousel-control-prev(href='#carouselControls7', role='button', data-slide='prev')
                                     span.carousel-control-prev-icon(aria-hidden='true')
@@ -75,23 +73,35 @@ block content
                                     span.carousel-control-next-icon(aria-hidden='true')
                                     span.sr-only Next
                             hr
-                            h5.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") play boy
+                            h5.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") china
                             p.color-amber-500
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star-half-full(aria-hidden='true')
-                                span.text-body.float-right.h4 &nbsp; $60.000
-                            button.btn.btn-primary.float-right reserva ya!
-                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
+                                span.text-body.float-right.h4 &nbsp; $80.000
+                            a.btn.btn-primary.float-right(href="el-castillo") reserva ya!
+                    .col-md-4.p-2(style=' flex-grow: 1; flex-basis: 0;')
                         .card.border.border-primary.p-3
                             #carouselControls4.carousel.slide(data-ride='carousel')
                                 .carousel-inner
                                     .carousel-item.active
-                                        img.d-block.w-100(src='img/eclipse/suite1.jpg', alt='First slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/qatar/red1.jpg', alt='First slide',style='height:200px;width:100%')
                                     .carousel-item
-                                        img.d-block.w-100(src='img/eclipse/suite2.jpg', alt='First slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/qatar/red2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/qatar/red3.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/qatar/red4.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/qatar/red5.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/qatar/red6.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/qatar/red7.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/qatar/red8.jpg', alt='Second slide',style='height:200px;width:100%')
 
                                 a.carousel-control-prev(href='#carouselControls4', role='button', data-slide='prev')
                                     span.carousel-control-prev-icon(aria-hidden='true')
@@ -100,27 +110,39 @@ block content
                                     span.carousel-control-next-icon(aria-hidden='true')
                                     span.sr-only Next
                             hr
-                            h5.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") suite
+                            h5.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") Grupal Red Room
                             p.color-amber-500
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star-half-full(aria-hidden='true')
-                                span.text-body.float-right.h4 &nbsp; $43.000
-                            button.btn.btn-primary.float-right reserva ya!
-                    .p-2.mx-5(style=' flex-grow: 1; flex-basis: 0;')
+                                span.text-body.float-right.h4 &nbsp; $220.000
+                            a.btn.btn-primary.float-right(href="qatar") reserva ya!
+                    .col-md-4.p-2(style=' flex-grow: 1; flex-basis: 0;')
                         .card.border.border-primary.p-3
                             #carouselControls6.carousel.slide(data-ride='carousel')
                                 .carousel-inner
                                     .carousel-item.active
-                                        img.d-block.w-100(src='img/elcastillo/mansion1.jpg', alt='First slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/lacascada/p1.jpg', alt='First slide',style='height:200px;width:100%')
                                     .carousel-item
-                                        img.d-block.w-100(src='img/elcastillo/mansion2.jpg', alt='Second slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/lacascada/p2.jpg', alt='Second slide',style='height:200px;width:100%')
                                     .carousel-item
-                                        img.d-block.w-100(src='img/elcastillo/mansion3.jpg', alt='Third slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/lacascada/p3.jpg', alt='Second slide',style='height:200px;width:100%')
                                     .carousel-item
-                                        img.d-block.w-100(src='img/elcastillo/mansion4.jpg', alt='Third slide',style='height:200px;width:100%')
+                                        img.d-block.w-100(src='img/lacascada/p4.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/lacascada/p5.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/lacascada/p6.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/lacascada/p7.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/lacascada/p8.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/lacascada/p9.jpg', alt='Second slide',style='height:200px;width:100%')
+                                    .carousel-item
+                                        img.d-block.w-100(src='img/lacascada/p10.jpg', alt='Second slide',style='height:200px;width:100%')
 
                                 a.carousel-control-prev(href='#carouselControls6', role='button', data-slide='prev')
                                     span.carousel-control-prev-icon(aria-hidden='true')
@@ -129,15 +151,15 @@ block content
                                     span.carousel-control-next-icon(aria-hidden='true')
                                     span.sr-only Next
                             hr
-                            h5.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") la mansion & spa terraza
+                            h5.text-capitalize(style="font-family: 'Sedgwick Ave', cursive;") piscina
                             p.color-amber-500
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star(aria-hidden='true')
                                 i.fa.fa-star-half-full(aria-hidden='true')
-                                span.text-body.float-right.h4 &nbsp; $70.000
-                            button.btn.btn-primary.float-right reserva ya!
+                                span.text-body.float-right.h4 &nbsp; $48.000
+                            a.btn.btn-primary.float-right(href="la-kaskada") reserva ya!
 
 
 
@@ -151,40 +173,28 @@ block content
                 //    .p-2
                 //        h1.display-2(style="font-family: 'Sedgwick Ave', cursive; text-shadow: 1px 1px 10px black;") si no sabes cual elegir, te ayudamos :)
 
-                .d-flex.text-justify
-                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
-                        .card.border.border-primary
+                .row.text-justify
+                    .p-2.col-md-6(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary.ml-md-3
                             .mt-4.text-center.color-amber-500
-                                i.fa.fa-dollar.fa-4x.text-center(aria-hidden='true')
                             .card-body
                                 h5.card-title
+                                    i.fa.fa-dollar.text-center(aria-hidden='true') &nbsp;
                                     | precio
                                 p.card-text
                                     | Selecciona tu motel definiendo tu presupuesto.
-                            .card-body
-                                a.card-link(href='#')
+                                a.card-link(href='reservar?precio')
                                     | filtra precio
-                    .p-2.ml-5(style=' flex-grow: 1; flex-basis: 0;')
-                        .card.border.border-primary
-                            .mt-4.text-center.color-red-500
-                                i.fa.fa-product-hunt.fa-4x.text-center(aria-hidden='true')
-                            .card-body
-                                h5.card-title
-                                    | promociones
-                                p.card-text
-                                    | Descubre ofertas y descuentos para tus momentos de pasión.
-                            .card-body
-                                a.card-link(href='#')
-                                    | filtra promociones
-                    .p-2.mx-5(style=' flex-grow: 1; flex-basis: 0;')
-                        .card.border.border-primary
+                    .p-2.col-md-6(style=' flex-grow: 1; flex-basis: 0;')
+                        .card.border.border-primary.mx-md-3
                             .mt-4.text-center.color-blue-500
-                                i.fa.fa-link.fa-4x.text-center(aria-hidden='true')
                             .card-body
                                 h5.card-title
+                                    i.fa.fa-link.text-center(aria-hidden='true') &nbsp;
                                     | alianza
-                                p.card-text
+                                //p.card-text
                                     | gremio de los taxistas, uber, macdonald's, cadenas de cine.
-                            .card-body
-                                a.card-link(href='#')
-                                    | ver alianzas
+                                p.card-text Discotecas &nbsp;
+                                    a(href="#") ver listado
+                                p.card-text Gremio de taxis &nbsp;
+                                    a(href="#") ver contactos
